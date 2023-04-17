@@ -18,7 +18,7 @@ header {
     grid-template-columns: auto;
     justify-items: center;
     text-align: center;
-    background-color:rgb(2, 22, 90);
+    background-color:rgb(190, 169, 17);
     color: seashell;
     padding: 1rem;
 }
@@ -40,7 +40,7 @@ main, footer {
 }
 
 footer {
-    background-color:rgb(2, 22, 90);
+    background-color:rgb(190, 169, 17);
     color: seashell;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
