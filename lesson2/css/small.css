@@ -1,0 +1,90 @@
+body{
+    background-color: #C5D6C4;
+    font-size: 16px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: #F2C540;
+    color: white;
+    text-align: center;
+}
+
+footer{
+    background-color: #F2C540;
+    color: white;
+    text-align: center;
+}
+main{
+    background-color: #C5D6C4;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-row-gap: 1rem;
+    align-items: center;
+    margin: 0 2em 1em 2em;
+    font-size: 1em;
+}
+header{
+    margin-bottom: 1em;
+}
+
+header h1{
+    margin: 0;
+    padding: 4px;
+    color:white;
+    font-weight: 900;
+    font-size: 3.5em;
+}
+
+header h2{
+    padding: 6px 4px 10px 4px;
+    font-weight: lighter;
+    margin:0;
+}
+
+section{
+    margin-bottom: .5em;
+    padding: 0;
+    border: 2px solid #F2C540;
+    background-color: white;
+    border-radius: 6px;
+}
+
+section h3{
+    background-color: #F2C540;
+    color: white;
+    margin: 0;
+    padding: 5px 4px;
+}
+
+section p{
+    padding: 2.5px 4.5px;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+
+footer {
+    font-family: 'Robot', sans-serif;
+    text-align: center;
+    color:white;
+    padding: 1.5em;
+}
+
+footer a:link{
+    color: #fcc394;
+}
+
+footer a:visited{
+    color:#7C9939;
+}
+
+#lastupdated {
+    font-style: italic;
+    font-size: smaller;
+}

@@ -1,0 +1,17 @@
+@media only screen and (min-width: 32.5em) {
+    main{
+        margin: 1em 2em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1.5fr;
+        grid-column-gap: 8px;
+    }
+
+    #prin1, #prin2, #prin3{
+        align-self: stretch;
+    }
+
+    #principle3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
