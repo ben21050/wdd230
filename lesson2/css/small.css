@@ -7,13 +7,13 @@ body{
 
 header{
     background-color: #F2C540;
-    color: white;
+    color: #4c2882;
     text-align: center;
 }
 
 footer{
     background-color: #F2C540;
-    color: white;
+    color: #4c2882;
     text-align: center;
 }
 main{
@@ -32,7 +32,7 @@ header{
 header h1{
     margin: 0;
     padding: 4px;
-    color:white;
+    color:#4c2882;
     font-weight: 900;
     font-size: 3.5em;
 }
@@ -53,7 +53,7 @@ section{
 
 section h3{
     background-color: #F2C540;
-    color: white;
+    color: #4c2882;
     margin: 0;
     padding: 5px 4px;
 }
@@ -72,7 +72,7 @@ img{
 footer {
     font-family: 'Robot', sans-serif;
     text-align: center;
-    color:white;
+    color:#4c2882;
     padding: 1.5em;
 }
 
@@ -81,7 +81,7 @@ footer a:link{
 }
 
 footer a:visited{
-    color:#7C9939;
+    color:#303030;
 }
 
 #lastupdated {
