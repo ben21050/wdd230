@@ -105,23 +105,28 @@ footer a:visited{
 }
 
 #color1{
-    background-color: #F26F63;
+    background-color: #CA6A2D;
+    color: #011640;
 }
 
 #color2{
-    background-color: #bf6f8e;
+    background-color: #EBD15F;
+    color: #4c2882;
 }
 
 #color3{
     background-color: #464e7c;
+    color:white
 }
 
 #color4{
-    background-color: #355b8c;
+    background-color: #4c2882;
+    color:white
 }
 
 #color5{
     background-color: #011640;
+    color:white
 }
 
 .audience{
@@ -130,6 +135,12 @@ footer a:visited{
 
 .typography{
     padding: 1em;
+    text-align: center;
+}
+
+.typography h2, p{
+    color:rgb(54, 20, 20);
+    text-align: center;
 }
 
 #colors-define{
