@@ -1,7 +1,12 @@
 @media only screen and (min-width: 32.5em) {
     nav ul{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 5em;
+        padding: 0;
+        flex-basis: 0;
+        flex-grow: 1;
         padding: .75em;
     }
 
