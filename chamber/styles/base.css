@@ -60,8 +60,8 @@ nav ul li.active a, .navigation a:hover {background-color: #666666;
 	transition: 0.2s;
     font-size: x-large;
 }
-
-
+nav ul {display: none;}
+nav ul.navigation{display: block;}
 
 .hidden {display: none;}
 

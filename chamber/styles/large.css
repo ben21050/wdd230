@@ -114,6 +114,8 @@
 
     .menu {display: none;}
 
+
+
 	.discover-main {
 		display: grid;
 		grid-template-rows: minmax(min-content, max-content);
