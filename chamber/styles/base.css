@@ -35,6 +35,11 @@ nav {
 	margin: 0 auto;
 	max-width: 760px;
 }
+.menu{
+    background-color: transparent;
+    border: none;
+    font-size: x-large;
+}
 .navigation {
 	list-style: none;
 	padding: 0;
@@ -49,6 +54,7 @@ nav {
 }
 
 .navigation li {display: none;}
+
 nav ul li.active a, .navigation a:hover {background-color: #666666;
     color:white;}
 
@@ -60,19 +66,25 @@ nav ul li.active a, .navigation a:hover {background-color: #666666;
 	transition: 0.2s;
     font-size: x-large;
 }
-nav ul {display: none;}
-nav ul.navigation{display: block;}
 
 .hidden {display: none;}
 
-.toggle-btn {padding: 1em;}
+
+.toggle-btn {
+    padding: 1em;
+}
 
 .social {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+
 .responsive li {display: block;}
+.responsive a {
+    background-color: #F2C540;
+    display: block;
+}
 
 
 ul.responsive {
