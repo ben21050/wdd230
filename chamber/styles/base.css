@@ -227,6 +227,7 @@ footer h3 {
 .hero {
     display: grid;
     grid: 1fr 1fr / 1fr 1fr;
+    background-color: transparent;
 }
 
 .hero .hero-photo {
@@ -252,7 +253,14 @@ footer h3 {
     height: fit-content;
     font-size: 2em;
 }
-
+.hero .button-link {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: right;
+    align-self: end;
+    margin-bottom: 1.5em;
+    margin-right: 1.5em;
+}
 .event {
     padding: 0 1em;
     background-color: #ba4a00;
@@ -295,6 +303,8 @@ footer h3 {
     padding: .5em 1em 0 1em;
     margin-top: 5px;
     font-weight: lighter;
+    font-size: medium;
+    color: white;
 }
 
 .attribution{
