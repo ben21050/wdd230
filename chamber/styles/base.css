@@ -165,7 +165,8 @@ footer h3 {
 }
 
 .button-link:hover {
-    background-color: #c4959d;
+    background-color: #ba4a00;
+    color: white;
     cursor: pointer;
 }
 
@@ -173,8 +174,8 @@ footer h3 {
     padding: 0.15rem 1.5rem;
     border-radius: 1rem;
     font-size: 1.5em;
-    color: white;
-    background-color: #BF6F7E;
+    color: #2c2b2b;
+    background-color: #F2C540;
     text-decoration: none;
 }
 
