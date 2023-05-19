@@ -30,7 +30,13 @@ h1 {
     align-self: center;
     color: #2c2b2b;
 }
-
+#banner {
+    display: none;
+    background-color: #ba4a00;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
 nav {
 	margin: 0 auto;
 	max-width: 760px;
@@ -264,7 +270,11 @@ footer h3 {
 .event {
     padding: 0 1em;
     background-color: #ba4a00;
-    color:white
+    color:white;
+}
+.event p{
+    float: center;
+    font-size: 18px;
 }
 
 .weather, .weather h3 {
@@ -277,21 +287,21 @@ footer h3 {
 }
 
 .weather img {
-    float: left;
+    float: center;
     padding-top: 1em;
-    width: 80px;
+    width: 150px;
 }
 
 .weather h4 {
-    font-size: 24px;
+    float: right;
+    font-size: 20px;
     font-weight: bold;
     padding-top: .1em;
-
 }
 
 
 .news {
-    background-color: #CA6A2D;
+    background-color: #ba4a00;
     color: white;
 }
 
@@ -303,8 +313,8 @@ footer h3 {
     padding: .5em 1em 0 1em;
     margin-top: 5px;
     font-weight: lighter;
-    font-size: medium;
-    color: white;
+    font-size: 20px;
+    color: whitesmoke;
 }
 
 .attribution{
