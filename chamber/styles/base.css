@@ -159,6 +159,25 @@ footer h3 {
     background-color: #CA6A2D;
 }
 
+.join .button-link {
+    margin: 1rem;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #c4959d;
+    cursor: pointer;
+}
+
+.button-link {
+    padding: 0.15rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.5em;
+    color: white;
+    background-color: #BF6F7E;
+    text-decoration: none;
+}
+
 .spotlight {
     display: grid;
     grid-template-columns: 1fr;
@@ -264,7 +283,7 @@ footer h3 {
 
 .news {
     background-color: #CA6A2D;
-    color: #2E2E2E;
+    color: white;
 }
 
 .news h3 {

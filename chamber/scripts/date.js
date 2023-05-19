@@ -21,3 +21,4 @@ if(d.getDay() === 2 || d.getDay() === 1) {
 	const banner = document.querySelector("#banner");
 	banner.style.display = "block";
 }
+
