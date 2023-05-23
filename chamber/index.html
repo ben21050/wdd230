@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Bogota Chamber of Commerce </title>
     <meta name="description" content="Bogota Chamber of Commerce">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
@@ -58,9 +59,12 @@
                 </p>
             </section>
             <section class="weather">
-                <h3> WEATHER </h3>
-                <h4>23°C </h4>
-                <img src="images/sol.png" alt="weather">
+                <h3> WEATHER* </h3>
+                <img src="#" alt="" id="weathericon">
+                <h4><span id="current-temp"></span> &#176;F</h4>
+                <h5><span id="desc"></span></h5>
+                <p>Wind Speed:  <span id="speed"></span> mph</p>
+                <p>Wind Chill:  <span id="windchill"></span></p>
             </section>
             <section class="join">
                 <h3 class="home-section-heading"> JOIN </h3>
@@ -111,7 +115,9 @@
         <hr>
         <div class="wdd-info">&copy;<span id="currentyear"></span> | Sergio Benavides| Bogota</div>
         <span id="lastupdated"></span>
+        <p class="attribution">*Information provided by OpenWeatherMap</p>
     </footer>
     <script src="scripts/date.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/weatherapi.js"></script>
 </body>
