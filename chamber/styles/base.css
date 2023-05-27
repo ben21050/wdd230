@@ -278,7 +278,7 @@ footer h3 {
 }
 
 .weather, .weather h3 {
-    background-color: #CA6A2D;
+    background-color: #ba4a00;
     padding: .5em;
 }
 
@@ -289,16 +289,19 @@ footer h3 {
 .weather img {
     float: center;
     padding-top: 1em;
-    width: 150px;
+    width: 120px;
 }
 
 .weather h4 {
     float: right;
-    font-size: 20px;
+    font-size: 60px;
     font-weight: bold;
     padding-top: .1em;
 }
 
+.weather p{
+    font-size: large;
+}
 
 .news {
     background-color: #ba4a00;
@@ -318,5 +321,5 @@ footer h3 {
 }
 
 .attribution{
-    font-size: xx-small;
+    font-size: small;
 }
