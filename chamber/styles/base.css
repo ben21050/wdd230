@@ -273,7 +273,7 @@ footer h3 {
     color:white;
 }
 .event p{
-    float: center;
+    float: left;
     font-size: 18px;
 }
 
@@ -287,7 +287,7 @@ footer h3 {
 }
 
 .weather img {
-    float: center;
+    float: left;
     padding-top: 1em;
     width: 120px;
 }
