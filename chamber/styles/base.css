@@ -107,8 +107,8 @@ main {
 }
 
 h2 {
-    color: red;
-    background-color: red;
+    color: #2c2b2b;
+    background-color: white;
     font-size: xx-large;
     text-align: center;
     padding: 2rem;
@@ -322,4 +322,47 @@ footer h3 {
 
 .attribution{
     font-size: small;
+}
+
+/************* DISCOVER *************/
+
+.discover-main {
+    display: grid;
+    grid-template-rows: minmax(min-content, max-content);
+    grid-template-columns: minmax(min-content, max-content);
+    max-width: 400px;
+    text-align: center;
+}
+
+.deck {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.card {
+    display: grid;
+    justify-items: center;
+    padding: 1em;
+    margin: 1em auto;
+    background-color: #ba4a00;
+    color: white;
+}
+
+.card p {
+    margin-top: auto;
+    padding: 0 1em;
+}
+
+.discover img[data-src] {
+    filter: blur(0.2em);
+  }
+.discover img {
+    filter: blur(0em);
+    transition: filter 0.1s;
+  }
+
+.discover-main > p {
+    font-style: italic;
+    color: #011640;
 }

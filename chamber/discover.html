@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sergio Benavides">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bogota Chamber of Commerce </title>
+    <meta name="description" content="Bogota Chamber of Commerce">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;600;900&ampdisplay=swap" rel="stylesheet">
+</head>
+
+<header>
+    <img src="images/logo.webp" alt="Bogota Chamber of Commerce logo" class="logo">
+    <h1> Bogota <span class="extra"><br> Chamber of Commerce </span></h1>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank"><img src="images/face_logo.png" alt="Facebook logo" class="icon"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="images/link.png" alt="LinkedIn logo" class="icon"></a>
+    </div>
+    <nav>
+        <button class="menu"><span id="ham" class="toggle-btn"> &#9776; </span><span id="xbutton" class="hidden toggle-btn"> X </span></button>
+
+        <ul class="navigation">
+            <li class="active"><a href="index.html"> Home </a></li>
+            <li><a href="discover.html"> Discover </a></li>
+            <li><a href="#"> Directory </a></li>
+            <li><a href="#"> Join </a></li>
+            <li><a href="#"> Contact </a></li>
+        </ul>
+    </nav>
+    <div class="date"></div>
+</header>
+
+<h2>Discover</h2>
+<main class="discover-main">
+    <div class="deck">
+        <div class="card discover">
+            <img src="images/placeholder.png" data-src="images/ajiaco.webp" alt="placeholder" width="300" height="300">
+            <h3> Gastronomic Experiences </h3>
+            <p> Bogota offers endless gastronomic experiences that allow you to discover new flavors going from the sea to the flavors of the Andes. </p>
+        </div>
+        <div class="card discover">
+            <img src="images/placeholder.png" data-src="images/bolivar.webp" alt="placeholder" width="300" height="300">
+            <h3>Downtown</h3>
+            <p> The city center is full of places to visit, from historical, romantic, bohemian and also family places. </p>
+        </div>
+        <div class="card discover">
+            <img src="images/placeholder.png" data-src="images/cci.webp" alt="placeholder" width="300" height="300">
+            <h3> Financial Center </h3>
+            <p> Bogota also has a strong financial system that allows different investments to take place. </p>
+        </div>
+        <div class="card discover">
+            <img src="images/placeholder.png" data-src="images/ciclovia.webp" alt="placeholder" width="300" height="300">
+            <h3> Sports</h3>
+            <p> There is a culture of sports, which is reflected in the "Ciclovia" on Sundays and holidays some streets of Bogota become an exclusive corridor for sports.</p>
+        </div>
+        <div class="card discover">
+            <img src="images/placeholder.png" data-src="images/equipos.webp" alt="placeholder" width="300" height="300">
+            <h3>Sports Events</h3>
+            <p>Sporting events also have a place in this city, soccer is just one example, in Bogota many sports are practiced at a professional level which generate a great spectacle.</p>
+        </div>
+        <div class="card discover">
+            <img src="images/placeholder.png" data-src="images/feria.webp" alt="placeholder" width="300" height="300">
+            <h3> Book Fair </h3>
+            <p> For the last 33 years, Bogota has hosted the Bogota Book Fair, a place where lovers of literature can find a whole world to explore. </p>
+        </div>
+        <div class="card discover">
+            <img src="images/placeholder.png" data-src="images/festival.webp" alt="placeholder" width="300" height="300">
+            <h3> Theatre Festival</h3>
+            <p> Bogota is characterized by its culture, and this is reflected in the Ibero-American Theater Festival which fills the entire city with culture and in turn allows you to broaden the vision of the world with this art.</p>
+        </div>
+        <div class="card discover">
+            <img src="images/placeholder.png" data-src="images/graf.webp" alt="placeholder" width="300" height="300">
+            <h3> Graffiti City </h3>
+            <p> City graffiti is an inclusion project where some city walls become a canvas for urban artists. </p>
+        </div>
+        <div class="card discover">
+            <img src="images/placeholder.png" data-src="images/oro.webp" alt="placeholder" width="300" height="300">
+            <h3> Gold Museum </h3>
+            <p> The different museums in Bogota generate an atmosphere full of history and understanding of the past, one of its greatest exponents is the gold museum, which is the museum with the most pre-Hispanic gold pieces in the world. </p>
+        </div>
+    </div>
+    <p id="sameday"> You visited this page <span id="lastvisit"></span> days ago.</p>
+</main>
+
+
+
+<footer>
+    <div class="top-footer">
+        <section class="company">
+            <img src="images/logo.webp" alt="Bogota Chamber of Commerce logo" class="logo">
+            <h3> Bogota Chamber of Commerce </h3>
+            <p> Avenida El Dorado nro. 68D-35, Bogota </p>
+        </section>
+        <div class="contact">
+            <p class="contact-info"> info@bogotacc.com </p>
+            <p class="contact-info"> +57 317 4241632</p>
+            <p class="contact-info"> <a href="https://goo.gl/maps/33mfHx6kw8w1nAHA9" target="blank"> &Rarr; Location Map</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="wdd-info">&copy;<span id="currentyear"></span> | Sergio Benavides| Bogota</div>
+    <span id="lastupdated"></span>
+</footer>
+<script src="scripts/date.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/weatherapi.js"></script>
+<script src="scripts/lazyloading.js"></script>
+</body>
