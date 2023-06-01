@@ -107,8 +107,8 @@ main {
 }
 
 h2 {
-    color: #2c2b2b;
-    background-color: white;
+    color: white;
+    background-color: #666666;
     font-size: xx-large;
     text-align: center;
     padding: 2rem;
