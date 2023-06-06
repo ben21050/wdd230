@@ -366,3 +366,102 @@ footer h3 {
     font-style: italic;
     color: #011640;
 }
+
+/************* Join Page *************/
+
+.join-main {
+    display: grid;
+    justify-content: center;
+}
+
+form {
+    margin: .5rem;
+    min-width: 350px;
+
+}
+
+.description {
+    display: none;
+}
+
+form fieldset {
+    margin: 1rem;
+    border: 3px line #F2C540;
+    border-radius: 10px;
+    padding: .5rem 2.5%;
+    max-width: 16rem;
+    padding-inline-end: 2rem;
+}
+
+form legend {
+    color: white;
+    margin: 0 1rem;
+    padding: .5rem;
+    background-color: #ba4a00;
+    border-radius: 10px;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    color: #555;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display:block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form textarea {
+    width: 88%;
+    background-color: rgba(0,0,0,0.1);
+    padding: .2rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #ba4a00;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 95%;
+    max-width: 16rem;
+}
+
+form input.submitBtn:hover {
+    background-color: #CA6A2D;
+    cursor: pointer;
+}
+
+form label.top input:required {
+    border: #F26F63 solid 2px;
+}
+
+.level {
+    font-weight: bold;
+}
+
+.cost {
+    background-color: #F2C540;
+    color: #555;
+    padding: .25rem 1rem;
+    margin-left: .5rem;
+    border-radius: 10px;
+}

@@ -39,65 +39,37 @@
         <div class="date"></div>
     </header>
 
+    <h2>Join the Bogota Chamber of Commerce</h2>
     <main>
-        <div class="home-main">
-            <section class="hero">
-                <h2> Welcome to Bogota </h2>
-                <picture class="hero-photo">
-                    <source media="(max-width: 33.9em)" srcset="images/wdd230-org_small.jpg">
-                    <source media="(max-width: 829px)" srcset="images/wdd230-org_Medium.jpg">
-                    <source media="(max-width: 1400px)" srcset="images/wdd230-org_large.jpg">
-                    <img src="images/wdd230-org_large.jpg" alt="WDD230 org">
-                </picture>
-                <a href="#" class="join-button button-link"> Join Now</a>
-            </section>
-            <section class="event">
-                <h3> EVENTS </h3>
-                <p>Event! ⌛ <br>
-                    NAMA Industry
-                    <br>The Industry NAMA Project: Productive Processes, is an initiative of the United Nations Development Program (UNDP) 
-                </p>
-            </section>
-            <section class="weather">
-                <h3> WEATHER* </h3>
-                <img src="#" alt="" id="weathericon">
-                <h4><span id="current-temp"></span> &#176;F</h4>
-                <h5><span id="desc"></span>.</h5>
-                <p>Wind Speed:  <span id="speed"></span> mph</p>
-                <p>Wind Chill:  <span id="windchill"></span></p>
-            </section>
-            <section class="join">
-                <h3 class="home-section-heading"> JOIN </h3>
-                <a href="#" class="button-link"> Join Us! </a>
-                <p>Discover how to join the chamber of commerce and how it will benefit your organitation</p>
+        <div class="join-main">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Primary Contact</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required></label>
+                    <label class="top">Last Name*<input type="text" name="lname" required></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Phone*<input type="tel" name="phone" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Member Info</legend>
+                    <label class="top">Business Position<input type="text" name="bus-position" pattern="[A-Za-z\s-]{7,}" title="Business Position"></label>
+                    <label class="top">Business Name<input type="text" name="bus-name" title="Business Name" required></label>
+                    <label class="top">Business Description <br><textarea rows="3" name="bus-description"></textarea></label>
 
-            </section>
-            <section class="news">
-                <h3> NEWS </h3>
-                <p> The Bogota Chamber of Commerce is celebrating its new president this month! We are proud to play a part in bringing our communities closer together. All members of the Chamber will recieve special pins and coins to commemorate this wonderful event! </p>
-
-
-            </section>
-            <section class="spotlight">
-                <h3 class="home-section-heading">SPOTLIGHT</h3>
-                    <div class="spotlight-item">
-                        <img src="images/corazon.png" alt="corazon">
-                        <p>https://www.famisanar.com.co/</p>
-                        <p>(607) 6829528</p>
-                    </div>
-                    <div class="spotlight-item">
-                        <img src="images/house.png" alt="casa">
-                        <p>https://camacol.co/</p>
-                        <p>(601) 743 0265</p>
-                    </div>
-                    <div class="spotlight-item" id="spotlight3">
-                        <img src="images/books.png" alt="bookshop">
-                        <p>https://fce.com.co/</p>
-                        <p>(601) 283 2200</p>
-                    </div>
-            </section>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Package</legend>
+                    <label class="sbs"><input type="radio" name="member" value="np"><span class="level"> Non-profit </span><span class="cost"> Free </span></label><p class="description"> Have your business listed in the Chamber's online directory.</p>
+                    <label class="sbs"><input type="radio" name="member" value="bronze"><span class="level"> Bronze </span><span class="cost"> $500 </span></label><p class="description"> Your company by being included in our website spotlights and online directory. </p>
+                    <label class="sbs"><input type="radio" name="member" value="silver"><span class="level"> Silver </span><span class="cost"> $1,000 </span></label><p class="description"> Stay up-to-date in the Chamber's events, receive spotlights, and be included in the chamber's online directory.</p>
+                    <label class="sbs"><input type="radio" name="member" value="gold"><span class="level"> Gold </span><span class="cost"> $2,000 </span></label><p class="description"> Become a part of the conversation at executive meetings, formal dinners, events, spotlights, and included in the online directory.</p>
+                </fieldset>
+                <label><input type="hidden" id="submitdate" name="submitdate" value=""></label>
+                <input type="submit" class="submitBtn" value="Join the Chamber">
+            </form>
         </div>
     </main>
+
 
     <footer>
         <div class="top-footer">
@@ -119,5 +91,4 @@
     </footer>
     <script src="scripts/date.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/weatherapi.js"></script>
 </body>
