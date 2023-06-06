@@ -386,7 +386,7 @@ form {
 
 form fieldset {
     margin: 1rem;
-    border: 3px line #F2C540;
+    border: 3px inset #F2C540;
     border-radius: 10px;
     padding: .5rem 2.5%;
     max-width: 16rem;
