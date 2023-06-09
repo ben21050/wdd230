@@ -2,7 +2,13 @@ body {
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
 }
-
+#banner {
+    display: none;
+    background-color: #ba4a00;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+}
 /************* Header *************/
 header {
     display: grid;
@@ -23,6 +29,16 @@ h1 {
     justify-self: start;
 }
 
+button {
+    background-color: #011640;
+    color: white;
+    border: none;
+    font-size: 2em;
+}
+
+button:hover {cursor: pointer;}
+
+.extra {display: none;}
 
 .date {
     grid-row: 2/3;
@@ -30,22 +46,12 @@ h1 {
     align-self: center;
     color: #2c2b2b;
 }
-#banner {
-    display: none;
-    background-color: #ba4a00;
-    color: white;
-    text-align: center;
-    padding: 0.5rem;
-}
+
 nav {
 	margin: 0 auto;
 	max-width: 760px;
 }
-.menu{
-    background-color: transparent;
-    border: none;
-    font-size: x-large;
-}
+
 .navigation {
 	list-style: none;
 	padding: 0;
@@ -61,8 +67,11 @@ nav {
 
 .navigation li {display: none;}
 
-nav ul li.active a, .navigation a:hover {background-color: #666666;
-    color:white;}
+.menu{
+    background-color: transparent;
+    border: none;
+    font-size: x-large;
+}
 
 .navigation a {
 	display: block;
@@ -73,33 +82,27 @@ nav ul li.active a, .navigation a:hover {background-color: #666666;
     font-size: x-large;
 }
 
+nav ul li.active a, .navigation a:hover  {background-color: #666666; color: white;}
+
 .hidden {display: none;}
 
-
-.toggle-btn {
-    padding: 1em;
-}
+.toggle-btn {padding: 1em;}
 
 .social {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-
 .responsive li {display: block;}
-.responsive a {
-    background-color: #F2C540;
-    display: block;
-}
-
 
 ul.responsive {
     z-index: 1;
 }
-
+.responsive a {background-color: #F2C540;}
 
 
 /*************    Main   *************/
+
 main {
     margin-bottom: .5rem;
     font-size: 1em;
