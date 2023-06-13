@@ -474,3 +474,107 @@ form label.top input:required {
 .thankyou-main{
     text-align: center;
 }
+
+
+/********************** Directory Page **********************/
+
+.directory {
+    text-align: center;
+    border: 4px #CA6A2D dotted;
+}
+
+.directory-main{
+    background-color: #F2C540;
+}
+.list-view img, .card-view>section h3 {display: none;}
+
+.card-view img{
+    display: block;
+    width: 70%;
+    margin: .5rem auto;
+    min-height: 200px;
+}
+
+.list-view>section h3 {display: block;
+}
+
+.list-view section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5em;
+    background-color: #F2C540;
+    color: #666666;
+}
+
+.list-view section p, .card-view section p {
+    font-weight: 500;
+}
+
+.card-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: black;
+}
+
+.card-view section {
+    padding: .5em;
+    margin: .5em;
+    display: grid;
+}
+
+.card-view section p {
+    align-self: end;
+}
+
+.list-view-btn {
+    padding: .5em;
+}
+
+.list-view-btn button {
+    padding:.2rem;
+    background-color: white;
+    border: 3px #ba4a00 solid;
+    border-radius: 5px;
+    margin: .3em;
+}
+
+.list-view section:nth-child(2n) {
+    background-color: #ba4a00;
+    color: white;
+}
+
+
+.contact-main {
+    display:grid;
+    justify-items: center;
+}
+
+.contact-main .submitBtn {
+    margin-left: 2.2rem;
+}
+
+.information {
+    margin-bottom: 1rem;
+}
+
+.visit-us {
+    background-color: #355B8C;
+    color: white;
+    margin-top: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    max-height: 300px;
+}
+
+.visit-us h3, .contact-point h3 {
+    font-size: x-large;
+}
+
+.contact-point {
+    background-color: #011640;
+    color: white;
+    margin-top: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    max-height: 300px;
+}
