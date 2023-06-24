@@ -1,6 +1,6 @@
 body{
-    max-width: 800px;
-    margin: auto;
+    
+    
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: whitesmoke;
@@ -12,11 +12,13 @@ h1{
 
 .cards{
     display: grid;
-    justify-items: center;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .cards section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 1em;
     padding: 1.5em;
     background-color: rgb(53, 124, 161);
@@ -26,9 +28,13 @@ h1{
 
 .cards section img {
     max-width: 60%;
+    width: auto;
 }
 
 .cards section h2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-bottom: 0;
     font-size: x-large;
     background-color: #f2c12e;
@@ -37,26 +43,3 @@ h1{
     border-radius: 5px;
 }
 
-@media only screen and (min-width:600px) {
-    .cards{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .cards section h2 {
-        font-size: x-large;
-    }
-}
-
-@media only screen and (min-width:920px){
-    .cards{
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 8px;
-        grid-row-gap: 13px;
-    }
-    .cards section {
-        padding: 1.5em;
-        margin:0;
-    }
-    .cards section img {
-        max-width: 100%;
-    }
-}
