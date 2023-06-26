@@ -32,45 +32,45 @@
                 <li><a href="index.html"> Home </a></li>
                 <li><a href="discover.html"> Discover </a></li>
                 <li><a href="directory.html"> Directory </a></li>
-                <li class="active"><a href="join.html"> Join </a></li>
-                <li><a href="contact.html"> Contact </a></li>
+                <li><a href="join.html"> Join </a></li>
+                <liclass="active"><a href="contact.html"> Contact </a></li>
             </ul>
         </nav>
         <div class="date"></div>
     </header>
 
-    <h2>Join the Bogota Chamber of Commerce</h2>
+    <h2> Contact Us </h2>
     <main>
-        <div class="join-main">
+        <div class="contact-main">
             <form method="get" action="thankyou.html">
                 <fieldset>
-                    <legend>Primary Contact</legend>
+                    <legend>Get in touch</legend>
                     <label class="top">First Name*<input type="text" name="fname" required></label>
                     <label class="top">Last Name*<input type="text" name="lname" required></label>
                     <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
                     <label class="top">Phone*<input type="tel" name="phone" required></label>
+                    <label class="top">Questions or comments<br><textarea rows="3" name="bus-description"></textarea></label>
                 </fieldset>
-                <fieldset>
-                    <legend>Member Info</legend>
-                    <label class="top">Business Position<input type="text" name="bus-position" pattern="[A-Za-z\s-]{7,}" title="Business Position"></label>
-                    <label class="top">Business Name<input type="text" name="bus-name" title="Business Name" required></label>
-                    <label class="top">Business Description <br><textarea rows="3" name="bus-description"></textarea></label>
-
-                </fieldset>
-                <fieldset>
-                    <legend>Membership Package</legend>
-                    <label class="sbs"><input type="radio" name="member" value="np"><span class="level"> Non-profit </span><span class="cost"> Free </span></label><p class="description"> Have your business listed in the Chamber's online directory.</p>
-                    <label class="sbs"><input type="radio" name="member" value="bronze"><span class="level"> Bronze </span><span class="cost"> $500 </span></label><p class="description"> Your company by being included in our website spotlights and online directory. </p>
-                    <label class="sbs"><input type="radio" name="member" value="silver"><span class="level"> Silver </span><span class="cost"> $1,000 </span></label><p class="description"> Stay up-to-date in the Chamber's events, receive spotlights, and be included in the chamber's online directory.</p>
-                    <label class="sbs"><input type="radio" name="member" value="gold"><span class="level"> Gold </span><span class="cost"> $2,000 </span></label><p class="description"> Become a part of the conversation at executive meetings, formal dinners, events, spotlights, and included in the online directory.</p>
-                </fieldset>
-                <label><input type="hidden" id="submitdate" name="submitdate" value=""> </label>
-                <input type="submit" class="submitBtn" value="Join the Chamber">
+                <input type="submit" class="submitBtn" value="Contact Us">
             </form>
+
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6465963055884!2d-74.10945502543991!3d4.65695384203613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b90af2bcca1%3A0xc0a8e968618e894!2sC%C3%A1mara%20de%20Comercio%20de%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1687822466619!5m2!1ses!2sco" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="information">
+                <section class="visit-us">
+                    <h3>Visit Us</h3>
+                    <p>Bogota Chamber of Commerce<br>Avenida El Dorado nro. 68D-35<br>Bogota DC</p>
+                    <p>+57 317 4241632</p>
+                </section>
+                <section class="contact-point">
+                    <h3>Contact</h3>
+                    <h4>Sergio Benavides</h4>
+                    <p>+57 317 4241632<br> contact@bogotacc.com</p>
+                </section>
+            </div>
         </div>
     </main>
-
-
     <footer>
         <div class="top-footer">
             <section class="company">
@@ -91,5 +91,5 @@
     </footer>
     <script src="scripts/date.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/submit.js"></script>
+    <script src="scripts/weatherapi.js"></script>
 </body>

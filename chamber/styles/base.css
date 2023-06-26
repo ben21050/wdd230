@@ -558,8 +558,8 @@ form label.top input:required {
 }
 
 .visit-us {
-    background-color: #355B8C;
-    color: white;
+    background-color: #F2C540;
+    color: #555;
     margin-top: .5rem;
     padding: .5rem 1rem;
     border-radius: 5px;
@@ -571,7 +571,7 @@ form label.top input:required {
 }
 
 .contact-point {
-    background-color: #011640;
+    background-color: #ba4a00;
     color: white;
     margin-top: .5rem;
     padding: .5rem 1rem;
