@@ -5,84 +5,96 @@
         "address": "Cl 26 # 13 a 28",
         "phone": "(57) 601 330 00 00",
         "website": "https://www.davivienda.com/",
-        "imgfile": "images/directory/davivienda.webp"
+        "imgfile": "images/directory/davivienda.webp",
+        "membship": "Non-profit"
       },
       {
         "name": "Alitas Colombianas",
         "address": "Cr 47 # 30 26",
         "phone": "(57) 601 435 16 20",
         "website": "https://alitascolombianas.com.co/",
-        "imgfile": "images/directory/alitas.webp"
+        "imgfile": "images/directory/alitas.webp",
+        "membship": "Non-profit"
       },
       {
         "name": "Postobon SA",
         "address": "Autopista Medellin KM 43",
         "phone": "(57) 601 232 22 34",
         "website": "https://www.postobon.com/",
-        "imgfile": "images/directory/postobon.webp"
+        "imgfile": "images/directory/postobon.webp",
+        "membship": "Non-profit"
       },
       {
         "name": "IO Company SAS",
         "address": "Cr 27 # 13 16",
         "phone": "(57) 601 223 44 15",
         "website": "https://www.iocompanysas.com.co/",
-        "imgfile": "images/directory/io.webp"
+        "imgfile": "images/directory/io.webp",
+        "membship": "Non-profit"
       },
       {
         "name": "Tecnoquimicas",
         "address": "Cra. 34 #50a Sur18,",
         "phone": "(57) 601 234 72 10",
         "website": "https://www.tqconfiable.com",
-        "imgfile": "images/directory/tecnoquimicas.webp"
+        "imgfile": "images/directory/tecnoquimicas.webp",
+        "membship": "Non-profit"
       },
       {
         "name": "Ecopetrol",
         "address": "Cra. 13 # 36 24",
         "phone": "(57) 601 401 16 01",
         "website": "https://www.ecopetrol.com.co",
-        "imgfile": "images/directory/ecop.webp"
+        "imgfile": "images/directory/ecop.webp",
+        "membship": "Gold"
       },
       {
         "name": "Compensar",
         "address": "ACr 68 # 49A  47",
         "phone": "(57) 601 307 70 01",
         "website": "https://www.compensar.com",
-        "imgfile": "images/directory/compensar.webp"
+        "imgfile": "images/directory/compensar.webp",
+        "membship": "Non-profit"
       },
       {
         "name": "ETB",
         "address": "Cr 92 147 B 23",
         "phone": "(57) 601 377 77 77",
         "website": "https://www.etb.com/",
-        "imgfile":"images/directory/etb.webp"
+        "imgfile":"images/directory/etb.webp",
+        "membship": "Bronze"
       },
       {
         "name": "Constructora Bolivar",
         "address": "Cl. 153 #73 32",
         "phone": "(57) 601 677 30 35",
         "website": "https://www.constructorabolivar.com",
-        "imgfile": "images/directory/bolivar.webp"
+        "imgfile": "images/directory/bolivar.webp",
+        "membship": "Non-profit"
       },
       {
         "name": "Alpina",
         "address": "Acl 26 #62 47",
         "phone": "(57) 601 423 86 00",
         "website": "https://www.alpina.com",
-        "imgfile": "images/directory/alpina.webp"
+        "imgfile": "images/directory/alpina.webp",
+        "membship": "Non-profit"
       },
       {
         "name": "Universidad de la Salle",
         "address": "Cr 5 59 a 44",
         "phone": "(57) 601 348 80 00",
         "website": "https://www.lasalle.edu.co",
-        "imgfile": "images/directory/salle.webp"
+        "imgfile": "images/directory/salle.webp",
+        "membship": "Silver"
       },
       {
         "name": "Rappi",
         "address": "Av el dorado 68-45",
         "phone": "(57) 601 440 76 92",
         "website": "https://www.rappi.com",
-        "imgfile": "images/directory/rappi.webp"
+        "imgfile": "images/directory/rappi.webp",
+        "membship": "Non-profit"
       }
     ]
 }
