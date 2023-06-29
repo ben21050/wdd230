@@ -227,7 +227,7 @@ h2 {color: #D92929;}
     padding: 0.5em;
     column-gap: 1em;
     border: #d9a404 solid 1px;
-    background-color: #bf705e;
+    background-color: rgb(124, 169, 72);
     max-width: 350px;
 }
 
