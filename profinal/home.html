@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Sergio Benavides">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Bountiful Foods | Home </title>
+        <meta name="description" content="The home page for Bountiful Foods">
+        <base href="/wdd230/profinal/">
+        <link rel="shortcut icon" href="/profinal/images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link href="/profinal/styles/base.css" rel="stylesheet">
+        <link href="/profinal/styles/medium.css" rel="stylesheet">
+        <link href="/profinal/styles/large.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="alert-message">
+            <span id="message"></span>
+            <span id="close-btn"> &#10006;</span>
+        </div>
+        <header>
+            <div class="top-left">
+                <a href="https://facebook.com" target="_blank"><img src="/profinal/images/facebook.svg" alt="Facebook logo" class="icon"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="/profinal/images/link.svg" alt="LinkedIn logo" class="icon"></a>
+                <a href="https://instagram.com" target="_blank"><img src="/profinal/images/igm.svg" alt="LinkedIn logo" class="icon"></a>
+            </div>
+            <div class="top-middle">
+                <img src="/profinal/images/logo.svg" alt="Temple Inn & Suites logo" class="logo logo-mobile">
+                <nav>
+                    <ul class="navigation hidden-left">
+                        <li class="active"><a href="/profinal/home.html"> HOME </a></li>
+                        <li><a href="/profinal/fresh.html"> FRESH </a></li>
+                        <li class="logo-center"><a href="index.html"><img src="/profinal/images/logo.svg" alt="Temple Inn & Suites logo" class="logo"></a></li>
+                        <li><a href="/profinal/aboutus.html"> ABOUT US </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="top-right">
+                <button class="menu"><span id="ham" class="toggle-btn"> &#9776; </span><span id="xbutton" class="hidden toggle-btn"> &#10006; </span></button>
+            </div>
+        </header>
+        <main>
+            <h1>Bountiful Foods </h1>
+            <div class="attention">
+                <a href="/profinal/fresh.html" class="hero ">
+                    <picture class="hero-photo">
+                        <source media="(max-width: 33.9em)" srcset="/profinal/images/bebidas_400.jpeg">
+                        <source media="(max-width: 829px)" srcset="/profinal/images/bebidas_600.jpeg">
+                        <source media="(max-width: 1400px)" srcset="/profinal/images/bebidas_800.jpeg">
+                        <img src="/profinal/images/bebidas_800.jpeg" alt="Payson Temple hero image">
+                    </picture>
+                    <p class="cta"> Make your own fruit drink mix </p>
+                </a>
+            </div>
+
+            <h2> Let life natural food change your life. </h2>
+            <div class="services">
+                <h3>Specialized Services</h3>
+                <ul>
+                    <li>Wedding Reception Hall</li>
+                    <li>Short-term Babysitting</li>
+                    <li>Family Research Center</li>
+                    <li><a href="services.html">See more ></a></li>
+                </ul>
+            </div>
+
+            <div class="temples spotlight">
+                <img src="/profinal/images/cienaga.jpg" alt="sunset">
+                <h4>Cienaga</h4>
+                <p>Ciénaga, municipality of Colombia that belongs to the department of Magdalena, located on the shores of the Caribbean Sea, in the northeastern end of the Ciénaga Grande de Santa Marta<br>
+                    <br>It is a point of convergence for people who travel through the Caribbean trunk road to Guajira, Barranquilla and the center of the country. 
+                </p>
+            </div>
+
+            <div class="weather">
+                <h3> WEATHER* </h3>
+                <div class="current-weather">
+                    <div class="temp-and-humid">
+                        <p>Humidity: <span id="humid"></span>%</p>
+                        <h4><span id="current-temp"></span>&#176;</h4>
+
+                    </div>
+                    <div class="icon-and-desc">
+                        <img src="#" alt="" id="weathericon">
+                        <p><span id="desc"></span></p>
+
+                    </div>
+
+                </div>
+                <div class="three-day">
+                    <img src="#" alt="">
+                    <h4><span class="current-temp"></span> &#176;F</h4>
+                    <p><span class="day"></span></p>
+                </div>
+                <div class="three-day">
+                    <img src="#" alt="">
+                    <h4><span class="current-temp"></span> &#176;F</h4>
+                    <p><span class="day"></span></p>
+                </div>
+                <div class="three-day">
+                    <img src="#" alt="">
+                    <h4><span class="current-temp"></span> &#176;F</h4>
+                    <p><span class="day"></span></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="contact">
+                <p class="contact-info"> contact@bountiful.com </p>
+                <p class="contact-info"> 240.554.3321</p>
+            </div>
+            <div class="social">
+                <p class="contact-info location"> <a href="https://goo.gl/maps/ScDHkBzXP3SW4Rw78" target="blank"> 🗺️ Locate us here.</a></p>
+
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; <span id="currentyear"></span> Bountiful Foods</p>
+                <p>All rights reserved.</p>
+                <span id="lastupdated"></span>
+            </div>
+            <p class="attribution">*The weather information has been provided by OpenWeatherMap</p>
+        </footer>
+        <script src="/profinal/scripts/menu.js"></script>
+        <script src="js/spotlight.js"></script>
+        <script src="/profinal/scripts/date.js"></script>
+        <script src="/profinal/scripts/weather.js"></script>
+    </body>
+</html>
