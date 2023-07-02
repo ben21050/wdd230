@@ -1,4 +1,4 @@
-//const requestURL = 'https://sebere.github.io/wdd230/chamber/js/data.json';
+//const requestURL = 'https://ben21050.github.io/wdd230/chamber/scripts/data.json';
 const requestURL = "scripts/data.json"
 const cards = document.querySelector('div.cards');
 const listButton = document.querySelector("#list-btn");
