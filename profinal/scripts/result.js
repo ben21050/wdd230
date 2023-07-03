@@ -4,6 +4,7 @@
     form.addEventListener('submit', function(event) {
       event.preventDefault();
 
+      // Obtener los valores del formulario
       const name = form.fname.value;
       const email = form.email.value;
       const phone = form.phone.value;
@@ -17,35 +18,27 @@
       fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
         .then(response => response.json())
         .then(data => {
+          // Buscar las frutas en el archivo JSON
           const fruitData1 = data.find(fruit => fruit.name === fruit1);
           const fruitData2 = data.find(fruit => fruit.name === fruit2);
           const fruitData3 = data.find(fruit => fruit.name === fruit3);
 
+          // Verificar si las frutas existen en el archivo JSON y tienen la propiedad "nutritions"
+          if (!fruitData1?.nutritions || !fruitData2?.nutritions || !fruitData3?.nutritions) {
+            resultDiv.innerHTML = '<p>One or more selected fruits are not found in the data.</p>';
+            return;
+          }
+
+          // Calcular los valores nutricionales
           const carbohydrates = fruitData1.nutritions.carbohydrates + fruitData2.nutritions.carbohydrates + fruitData3.nutritions.carbohydrates;
           const protein = fruitData1.nutritions.protein + fruitData2.nutritions.protein + fruitData3.nutritions.protein;
           const fat = fruitData1.nutritions.fat + fruitData2.nutritions.fat + fruitData3.nutritions.fat;
           const calories = fruitData1.nutritions.calories + fruitData2.nutritions.calories + fruitData3.nutritions.calories;
           const sugar = fruitData1.nutritions.sugar + fruitData2.nutritions.sugar + fruitData3.nutritions.sugar;
 
+          // Generar el contenido de salida formateado
           const output = `
-            <h2>Order Summary</h2>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Phone:</strong> ${phone}</p>
-            <p><strong>Selected Fruits:</strong></p>
-            <ul>
-              <li>${fruit1}</li>
-              <li>${fruit2}</li>
-              <li>${fruit3}</li>
-            </ul>
-            <p><strong>Additional Comments/Questions:</strong> ${comments}</p>
-            <p><strong>Date:</strong> ${currentDate}</p>
-            <h3>Nutritional Information</h3>
-            <p><strong>Total Carbohydrates:</strong> ${carbohydrates}</p>
-            <p><strong>Total Protein:</strong> ${protein}</p>
-            <p><strong>Total Fat:</strong> ${fat}</p>
-            <p><strong>Total Calories:</strong> ${calories}</p>
-            <p><strong>Total Sugar:</strong> ${sugar}</p>
+            <!-- ... (resto del código) ... -->
           `;
 
           resultDiv.innerHTML = output;
@@ -55,3 +48,4 @@
           resultDiv.innerHTML = '<p>An error occurred while fetching fruit data.</p>';
         });
     });
+
