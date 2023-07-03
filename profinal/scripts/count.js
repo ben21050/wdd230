@@ -1,31 +1,28 @@
-// Obtén una referencia al formulario y al contador en la página de inicio
-const form = document.getElementById('fresh-form');
-const drinkCountSpan = document.getElementById('drink-count');
+// Obtener el elemento del contador
+const drinkCountForm = document.getElementById('drink-count-form');
 
-// Verifica si ya existe un valor almacenado para el contador
-let drinkCount = localStorage.getItem('drinkCount');
-if (!drinkCount) {
-  // Si no hay un valor almacenado, inicializa el contador en 0
-  drinkCount = 0;
-} else {
-  // Si hay un valor almacenado, actualiza el contenido del contador en la página de inicio
-  drinkCountSpan.textContent = drinkCount;
+// Obtener el valor actual del contador almacenado en localStorage
+let count = localStorage.getItem('drinkCount');
+
+// Si el contador no existe en localStorage, inicializarlo a 0
+if (!count) {
+  count = 0;
 }
 
-// Agrega un controlador de eventos para el envío del formulario
+// Mostrar el contador en la página
+drinkCountForm.textContent = count;
+
+// Escuchar el evento de envío del formulario
+const form = document.getElementById('fresh-form');
 form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+  event.preventDefault(); // Evitar que el formulario se envíe
 
-  // Incrementa el contador de bebidas
-  drinkCount++;
+  // Incrementar el contador
+  count++;
   
-  // Almacena el nuevo valor del contador en el almacenamiento local del navegador
-  localStorage.setItem('drinkCount', drinkCount);
+  // Actualizar el valor del contador en localStorage
+  localStorage.setItem('drinkCount', count);
 
-  // Actualiza el contenido del contador en la página de inicio y en la página de formulario
-  drinkCountSpan.textContent = drinkCount;
-  document.getElementById('drink-count-form').textContent = drinkCount;
-  
-  // Restablece los valores del formulario
-  form.reset();
+  // Mostrar el contador actualizado en la página
+  drinkCountForm.textContent = count;
 });
