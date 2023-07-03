@@ -1,51 +1,72 @@
-    const form = document.getElementById('fresh-form');
-    const resultDiv = document.getElementById('result');
+const form = document.getElementById('fresh-form');
+const resultDiv = document.getElementById('result');
 
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-      // Obtener los valores del formulario
-      const name = form.fname.value;
-      const email = form.email.value;
-      const phone = form.phone.value;
-      const fruit1 = form.fruit1.value;
-      const fruit2 = form.fruit2.value;
-      const fruit3 = form.fruit3.value;
-      const comments = form.comments.value;
+    const fname = form.fname.value;
+    const email = form.email.value;
+    const phone = form.phone.value;
+    const fruits = Array.from(form.querySelectorAll('.fruits-select')).map(select => select.value);
+    const comments = form.comments.value;
 
-      const currentDate = new Date().toLocaleDateString();
+    const currentDate = new Date().toLocaleDateString();
 
-      fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
-        .then(response => response.json())
-        .then(data => {
-          // Buscar las frutas en el archivo JSON
-          const fruitData1 = data.find(fruit => fruit.name === fruit1);
-          const fruitData2 = data.find(fruit => fruit.name === fruit2);
-          const fruitData3 = data.find(fruit => fruit.name === fruit3);
+    let totalCarbs = 0;
+    let totalProteins = 0;
+    let totalFats = 0;
+    let totalSugar = 0;
+    let totalCalories = 0;
 
-          // Verificar si las frutas existen en el archivo JSON y tienen la propiedad "nutritions"
-          if (!fruitData1?.nutritions || !fruitData2?.nutritions || !fruitData3?.nutritions) {
-            resultDiv.innerHTML = '<p>One or more selected fruits are not found in the data.</p>';
-            return;
-          }
-
-          // Calcular los valores nutricionales
-          const carbohydrates = fruitData1.nutritions.carbohydrates + fruitData2.nutritions.carbohydrates + fruitData3.nutritions.carbohydrates;
-          const protein = fruitData1.nutritions.protein + fruitData2.nutritions.protein + fruitData3.nutritions.protein;
-          const fat = fruitData1.nutritions.fat + fruitData2.nutritions.fat + fruitData3.nutritions.fat;
-          const calories = fruitData1.nutritions.calories + fruitData2.nutritions.calories + fruitData3.nutritions.calories;
-          const sugar = fruitData1.nutritions.sugar + fruitData2.nutritions.sugar + fruitData3.nutritions.sugar;
-
-          // Generar el contenido de salida formateado
-          const output = `
-            <!-- ... (resto del código) ... -->
-          `;
-
-          resultDiv.innerHTML = output;
-        })
-        .catch(error => {
-          console.log('Error:', error);
-          resultDiv.innerHTML = '<p>An error occurred while fetching fruit data.</p>';
-        });
+    fruits.forEach(fruit => {
+        const fruitData = fruitJSON.find(item => item.name === fruit);
+        if (fruitData) {
+            totalCarbs += fruitData.carbs;
+            totalProteins += fruitData.proteins;
+            totalFats += fruitData.fats;
+            totalSugar += fruitData.sugar;
+            totalCalories += fruitData.calories;
+        }
     });
 
+    const resultHTML = `
+        <h2>Detalles del Pedido</h2>
+        <p>Nombre: ${fname}</p>
+        <p>Correo Electrónico: ${email}</p>
+        <p>Teléfono: ${phone}</p>
+        <p>Frutas Seleccionadas: ${fruits.join(', ')}</p>
+        <p>Instrucciones Especiales: ${comments}</p>
+        <h2>Fecha del Pedido</h2>
+        <p>${currentDate}</p>
+        <h2>Totales</h2>
+        <p>Carbohidratos Totales: ${totalCarbs}g</p>
+        <p>Proteínas Totales: ${totalProteins}g</p>
+        <p>Grasas Totales: ${totalFats}g</p>
+        <p>Azúcar Total: ${totalSugar}g</p>
+        <p>Calorías Totales: ${totalCalories}kcal</p>
+    `;
+
+    resultDiv.innerHTML = resultHTML;
+});
+
+// Carga el archivo JSON al cargar la página
+window.addEventListener('DOMContentLoaded', function() {
+    fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
+        .then(response => response.json())
+        .then(data => {
+            // Asigna el JSON a la variable fruitJSON
+            fruitJSON = data;
+
+            // Crea las opciones de selección de frutas en el formulario
+            const fruitSelects = Array.from(form.querySelectorAll('.fruits-select'));
+            fruitSelects.forEach(select => {
+                data.forEach(fruit => {
+                    const option = document.createElement('option');
+                    option.value = fruit.name;
+                    option.textContent = fruit.name;
+                    select.appendChild(option);
+                });
+            });
+        })
+        .catch(error => console.log(error));
+});
