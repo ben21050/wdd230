@@ -4,8 +4,11 @@
         // Obtener referencia al contador de bebidas especiales
         const countSpan = document.getElementById('special-drinks-count');
 
-        // Variable para almacenar el contador localmente
-        let specialDrinksCount = 0;
+        // Verificar si hay datos almacenados localmente y actualizar el contador
+        if (localStorage.getItem('specialDrinksCount')) {
+            specialDrinksCount = parseInt(localStorage.getItem('specialDrinksCount'));
+            countSpan.textContent = specialDrinksCount;
+        }
 
         // Escuchar el evento de envío del formulario
         form.addEventListener('submit', function(event) {
@@ -14,8 +17,16 @@
             // Incrementar el contador de bebidas especiales
             specialDrinksCount++;
 
+            // Guardar el contador en el almacenamiento local
+            localStorage.setItem('specialDrinksCount', specialDrinksCount);
+
             // Actualizar el texto del contador en la página
             countSpan.textContent = specialDrinksCount;
+
+            // Enviar el formulario
+            form.submit();
         });
+
+
 
 
