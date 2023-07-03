@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sergio Benavides">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bogota Chamber of Commerce </title>
+    <meta name="description" content="Bogota Chamber of Commerce">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;600;900&ampdisplay=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="banner"> 🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m </div>
+    <header>
+        <img src="images/logo.webp" alt="Bogota Chamber of Commerce logo" class="logo">
+        <h1> Bogota <span class="extra"><br> Chamber of Commerce </span></h1>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/face_logo.png" alt="Facebook logo" class="icon"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/link.png" alt="LinkedIn logo" class="icon"></a>
+        </div>
+        <nav>
+            <button class="menu"><span id="ham" class="toggle-btn"> &#9776; </span><span id="xbutton" class="hidden toggle-btn"> X </span></button>
+
+            <ul class="navigation">
+                <li class="active"><a href="index.html"> Home </a></li>
+                <li><a href="discover.html"> Discover </a></li>
+                <li><a href="directory.html"> Directory </a></li>
+                <li><a href="join.html"> Join </a></li>
+                <li><a href="#"> Contact </a></li>
+            </ul>
+        </nav>
+        <div class="date"></div>
+    </header>
+    <main class="thankyou-main">
+        <div class="hansd">
+            <img src="images/hands.png" alt="thank you graphic">
+            <h2> Thank you for joining the Bogota Chamber of Commerce! </h2>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="top-footer">
+            <section class="company">
+                <img src="images/logo.webp" alt="Bogota Chamber of Commerce logo" class="logo">
+                <h3> Bogota Chamber of Commerce </h3>
+                <p> Avenida El Dorado nro. 68D-35, Bogota </p>
+            </section>
+            <div class="contact">
+                <p class="contact-info"> info@bogotacc.com </p>
+                <p class="contact-info"> +57 317 4241632</p>
+                <p class="contact-info"> <a href="https://goo.gl/maps/33mfHx6kw8w1nAHA9" target="blank"> &Rarr; Location Map</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="wdd-info">&copy;<span id="currentyear"></span> | Sergio Benavides| Bogota</div>
+        <span id="lastupdated"></span>
+        <p class="attribution">*Information provided by OpenWeatherMap</p>
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/weatherapi.js"></script>
