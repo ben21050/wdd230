@@ -1,4 +1,3 @@
-const form = document.getElementById('fresh-form');
 const resultDiv = document.getElementById('result');
 
 form.addEventListener('submit', function(event) {
