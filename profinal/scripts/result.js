@@ -42,11 +42,11 @@ fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
       <p><strong>Additional Comments/Questions:</strong> ${comments}</p>
       <p><strong>Date:</strong> ${currentDate}</p>
       <h3>Nutritional Information</h3>
-      <p><strong>Total Carbohydrates:</strong> ${carbohydrates}</p>
-      <p><strong>Total Protein:</strong> ${protein}</p>
-      <p><strong>Total Fat:</strong> ${fat}</p>
-      <p><strong>Total Calories:</strong> ${calories}</p>
-      <p><strong>Total Sugar:</strong> ${sugar}</p>
+      <p><strong>Total Carbohydrates:</strong> ${carbohydrates.toFixed(2)}</p>
+      <p><strong>Total Protein:</strong> ${protein.toFixed(2)}</p>
+      <p><strong>Total Fat:</strong> ${fat.toFixed(2)}</p>
+      <p><strong>Total Calories:</strong> ${calories.toFixed(2)}</p>
+      <p><strong>Total Sugar:</strong> ${sugar.toFixed(2)}</p>
     `;
 
     // Mostrar el resultado en la página
@@ -56,3 +56,5 @@ fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
     console.log('Error:', error);
     resultDiv.innerHTML = '<p>An error occurred while fetching fruit data.</p>';
   });
+
+  
