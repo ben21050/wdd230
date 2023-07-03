@@ -13,7 +13,9 @@ const comments = form.comments.value;
 const currentDate = new Date().toLocaleDateString();
 
 // Obtener los datos de las frutas del archivo JSON
-fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
+const requestURL = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
+
+fetch(requestURL)
   .then(response => response.json())
   .then(data => {
     // Obtener los valores de carbohidratos, proteínas, grasas, azúcar y calorías para las frutas seleccionadas
