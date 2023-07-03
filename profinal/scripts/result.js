@@ -1,21 +1,19 @@
 const resultDiv = document.getElementById('result');
 
 // Obtener los valores seleccionados del formulario
-const name = form.fname.value;
-const email = form.email.value;
-const phone = form.phone.value;
-const fruit1 = form.fruit1.value;
-const fruit2 = form.fruit2.value;
-const fruit3 = form.fruit3.value;
-const comments = form.comments.value;
+const name = document.getElementById('fname').value;
+const email = document.getElementById('email').value;
+const phone = document.getElementById('phone').value;
+const fruit1 = document.getElementById('fruit1').value;
+const fruit2 = document.getElementById('fruit2').value;
+const fruit3 = document.getElementById('fruit3').value;
+const comments = document.getElementById('comments').value;
 
 // Obtener la fecha actual
 const currentDate = new Date().toLocaleDateString();
 
 // Obtener los datos de las frutas del archivo JSON
-const requestURL = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
-
-fetch(requestURL)
+fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
   .then(response => response.json())
   .then(data => {
     // Obtener los valores de carbohidratos, proteínas, grasas, azúcar y calorías para las frutas seleccionadas
@@ -44,11 +42,11 @@ fetch(requestURL)
       <p><strong>Additional Comments/Questions:</strong> ${comments}</p>
       <p><strong>Date:</strong> ${currentDate}</p>
       <h3>Nutritional Information</h3>
-      <p><strong>Total Carbohydrates:</strong> ${carbohydrates}</p>
-      <p><strong>Total Protein:</strong> ${protein}</p>
-      <p><strong>Total Fat:</strong> ${fat}</p>
-      <p><strong>Total Calories:</strong> ${calories}</p>
-      <p><strong>Total Sugar:</strong> ${sugar}</p>
+      <p><strong>Total Carbohydrates:</strong> ${carbohydrates.toFixed(2)}</p>
+      <p><strong>Total Protein:</strong> ${protein.toFixed(2)}</p>
+      <p><strong>Total Fat:</strong> ${fat.toFixed(2)}</p>
+      <p><strong>Total Calories:</strong> ${calories.toFixed(2)}</p>
+      <p><strong>Total Sugar:</strong> ${sugar.toFixed(2)}</p>
     `;
 
     // Mostrar el resultado en la página
