@@ -20,9 +20,9 @@ form.addEventListener('submit', function(event) {
     fruits.forEach(fruit => {
         const fruitData = fruitJSON.find(item => item.name === fruit);
         if (fruitData) {
-            totalCarbs += fruitData.carbs;
-            totalProteins += fruitData.proteins;
-            totalFats += fruitData.fats;
+            totalCarbs += fruitData.carbohydrates;
+            totalProteins += fruitData.protein;
+            totalFats += fruitData.fat;
             totalSugar += fruitData.sugar;
             totalCalories += fruitData.calories;
         }
