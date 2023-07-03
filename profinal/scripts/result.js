@@ -1,13 +1,13 @@
 const resultDiv = document.getElementById('result');
 
 // Obtener los valores seleccionados del formulario
-const name = form.fname.value;
-const email = form.email.value;
-const phone = form.phone.value;
-const fruit1 = form.fruit1.value;
-const fruit2 = form.fruit2.value;
-const fruit3 = form.fruit3.value;
-const comments = form.comments.value;
+const name = document.getElementById('fname').value;
+const email = document.getElementById('email').value;
+const phone = document.getElementById('phone').value;
+const fruit1 = document.getElementById('fruit1').value;
+const fruit2 = document.getElementById('fruit2').value;
+const fruit3 = document.getElementById('fruit3').value;
+const comments = document.getElementById('comments').value;
 
 // Obtener la fecha actual
 const currentDate = new Date().toLocaleDateString();
