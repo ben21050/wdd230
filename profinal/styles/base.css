@@ -172,17 +172,22 @@ h2 {color: #D92929;}
     background-color: #f0f0f0; /* Color de fondo del div */
 }
 
-.services::after {
+.services::before, .services::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -20px; /* Ajusta la distancia vertical de las curvas */
+    width: 50%;
+    height: 40px; /* Ajusta la altura de las curvas según tus necesidades */
+    border-radius: 50%;
+    background-color: #f0f0f0; /* Color de las curvas */
+}
+
+.services::before{
     left: 0;
-    width: 100%;
-    height: 50px; /* Ajusta la altura de la onda según tus necesidades */
-    background-image: url('ruta/imagen.png'); /* Reemplaza 'ruta/imagen.png' con la ruta de tu imagen de onda */
-    background-repeat: repeat-x;
-    background-size: cover;
-    transform: scaleY(-1);
+
+} 
+.services::after{
+    right: 0;
 }
 
 
