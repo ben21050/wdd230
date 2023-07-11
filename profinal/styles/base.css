@@ -172,7 +172,7 @@ h2 {color: #D92929;}
     background: linear-gradient(to bottom, #f0f0f0 0%, #ffffff 50%, #f0f0f0 100%);
 }
 
-.services::before {
+.services::before, .spotlight::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -182,7 +182,7 @@ h2 {color: #D92929;}
     z-index: 1;
 }
 
-.services::after {
+.services::after, .spotlight::after {
     content: "";
     position: absolute;
     bottom: 0;
