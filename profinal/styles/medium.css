@@ -21,7 +21,7 @@
             grid-column: 1/2;
             grid-row: 2/4;
             align-self: center;
-            border-radius: 50px;
+            border-radius: 50%;
         }
     
         .spotlight h4 {
