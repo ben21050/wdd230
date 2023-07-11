@@ -253,9 +253,8 @@ h2 {color: #D92929;}
   }
 .weather {
     display: grid;
-    grid-template-columns: 1fr 2fr;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 20 auto;
 }
 
 .weather h3 {
@@ -265,7 +264,7 @@ h2 {color: #D92929;}
 
 .current-weather {
     justify-self: center;
-    grid-column: 1/1;
+    grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
