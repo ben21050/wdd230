@@ -166,12 +166,25 @@ h2 {color: #D92929;}
     padding: .5em;
     margin-bottom: 1.5em;*/
 
-    width: 200px; /* Ajusta el ancho según tus necesidades */
+    width: 100%;
     height: 200px; /* Ajusta la altura según tus necesidades */
+    position: relative;
     background-color: #f0f0f0; /* Color de fondo del div */
-    border-radius: 50% / 100% 100% 0 0; /* Configuración de la curva */
-    overflow: hidden; 
 }
+
+.services{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Ajusta la altura de la onda según tus necesidades */
+    background-image: url('ruta/imagen.png'); /* Reemplaza 'ruta/imagen.png' con la ruta de tu imagen de onda */
+    background-repeat: repeat-x;
+    background-size: cover;
+    transform: scaleY(-1);
+}
+
 
 .services ul {text-align: left;}
 
