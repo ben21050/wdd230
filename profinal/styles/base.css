@@ -271,7 +271,7 @@ h2 {color: #D92929;}
     padding: 0.5em;
     column-gap: 1em;
     border: #d9a404 solid 1px;
-    background-color: rgb(124, 169, 72);
+    background-color: rgb(100, 42, 103);
     max-width: 350px;
 }
 
@@ -290,7 +290,7 @@ h2 {color: #D92929;}
 .current-weather h4 {
     grid-column: 1/2;
     font-size: 3.5em;
-    color: #590202;
+    color: rgb(253, 247, 169);
     margin: 0;
 }
 
