@@ -30,7 +30,7 @@ fetch(apiURL)
         });
     }
 
-    document.querySelectorAll(".three-day1").forEach((value, index) => {
+    document.querySelectorAll(".three-day").forEach((value, index) => {
         const day = jsObject.daily[index];
 
         const date = new Date(day.dt * 1000);
@@ -40,29 +40,5 @@ fetch(apiURL)
         image.src = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
         value.querySelector(".current-temp").textContent = Math.floor(day.temp.day);
         value.querySelector(".day").textContent = `${DaysOfWeek[date.getDay()]} ${MonthsOfYear[date.getMonth()]} ${date.getDate()}`;
-    })
-    
-    document.querySelectorAll(".three-day2").forEach((value, index) => {
-      const day = jsObject.daily[index];
-  
-      const date = new Date(day.dt * 1000);
-      const image = value.querySelector("img");
-      const desc = day.weather[0].description;
-      image.setAttribute("alt", desc)
-      image.src = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
-      value.querySelector(".current-temp").textContent = Math.floor(day.temp.day);
-      value.querySelector(".day").textContent = `${DaysOfWeek[date.getDay()]} ${MonthsOfYear[date.getMonth()]} ${date.getDate()}`;
-    })
-        
-    document.querySelectorAll(".three-day3").forEach((value, index) => {
-      const day = jsObject.daily[index];
-  
-      const date = new Date(day.dt * 1000);
-      const image = value.querySelector("img");
-      const desc = day.weather[0].description;
-      image.setAttribute("alt", desc)
-      image.src = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
-      value.querySelector(".current-temp").textContent = Math.floor(day.temp.day);
-      value.querySelector(".day").textContent = `${DaysOfWeek[date.getDay()]} ${MonthsOfYear[date.getMonth()]} ${date.getDate()}`;
     })
   });
