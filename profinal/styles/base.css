@@ -254,7 +254,7 @@ h2 {color: #D92929;}
 .weather {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -296,21 +296,21 @@ h2 {color: #D92929;}
 }
 
 .three-day1 {
-    grid-column: 3/3;
+    grid-column: 1/1;
     background-color: #d9a404;
     padding: .5em;
     box-shadow: 2px 2px 2px #590202;
     border: 1px solid #590202;
 }
 .three-day2 {
-    grid-column: 4/4;
+    grid-column: 3/3;
     background-color: #d9a404;
     padding: .5em;
     box-shadow: 2px 2px 2px #590202;
     border: 1px solid #590202;
 }
 .three-day3 {
-    grid-row: 3/4;
+    grid-row: 4/4;
     background-color: #d9a404;
     padding: .5em;
     box-shadow: 2px 2px 2px #590202;
