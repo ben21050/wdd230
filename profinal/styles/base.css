@@ -294,7 +294,21 @@ h2 {color: #D92929;}
     margin: 0;
 }
 
-.three-day {
+.three-day1 {
+    grid-row: 3/4;
+    background-color: #d9a404;
+    padding: .5em;
+    box-shadow: 2px 2px 2px #590202;
+    border: 1px solid #590202;
+}
+.three-day2 {
+    grid-row: 3/4;
+    background-color: #d9a404;
+    padding: .5em;
+    box-shadow: 2px 2px 2px #590202;
+    border: 1px solid #590202;
+}
+.three-day3 {
     grid-row: 3/4;
     background-color: #d9a404;
     padding: .5em;
