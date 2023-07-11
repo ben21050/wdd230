@@ -175,18 +175,21 @@ h2 {color: #D92929;}
 .services::before, .services::after {
     content: "";
     position: absolute;
-    bottom: -20px; /* Ajusta la distancia vertical de las curvas */
+    bottom: 0;
     width: 50%;
-    height: 40px; /* Ajusta la altura de las curvas según tus necesidades */
-    border-radius: 50%;
+    height: 50px; /* Ajusta la altura de las curvas según tus necesidades */
     background-color: #f0f0f0; /* Color de las curvas */
 }
 
 .services::before{
+    border-radius: 0 0 50% 50%;
+    transform: translateY(25px) skewX(-30deg);
     left: 0;
 
 } 
 .services::after{
+    border-radius: 0 0 50% 50%;
+    transform: translateY(25px) skewX(30deg);
     right: 0;
 }
 
