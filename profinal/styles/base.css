@@ -222,7 +222,7 @@ h2 {color: #D92929;}
 
 }
 
-.services::before {
+.spotlight::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -232,7 +232,7 @@ h2 {color: #D92929;}
     z-index: 1;
 }
 
-.services::after{
+.spotlight::after{
     content: "";
     position: absolute;
     bottom: 0;
