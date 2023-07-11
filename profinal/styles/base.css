@@ -179,6 +179,7 @@ h2 {color: #D92929;}
     width: 50%;
     height: 50px; /* Ajusta la altura de las curvas según tus necesidades */
     background-color: #f0f0f0; /* Color de las curvas */
+    z-index: -1;
 }
 
 .services::before{
@@ -190,7 +191,7 @@ h2 {color: #D92929;}
 .services::after{
     border-radius: 0 0 50% 50%;
     transform: translateY(25px) skewX(30deg);
-    right: 0;
+    right: 0;  
 }
 
 
