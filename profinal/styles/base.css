@@ -89,7 +89,7 @@ ul.responsive {z-index: 3;}
 footer {
     background-color: rgb(228, 120, 58);
     padding: 1em;
-    color: #d9d9d9;
+    color: #590202;
 }
 
 .social {
@@ -178,7 +178,7 @@ h2 {color: #D92929;}
 
 .spotlight {
     background-color: rgb(228, 120, 58);
-    color: white;
+    color: #590202;
     padding: .5em;
     margin: .5em 10% .5em auto;
 }
