@@ -172,7 +172,7 @@ h2 {color: #D92929;}
     background: linear-gradient(to bottom, #f0f0f0 0%, #ffffff 50%, #f0f0f0 100%);
 }
 
-.services::before, .spotlight::before {
+.services::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -182,7 +182,7 @@ h2 {color: #D92929;}
     z-index: 1;
 }
 
-.services::after, .spotlight::after {
+.services::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -215,8 +215,8 @@ h2 {color: #D92929;}
 }
 
 .spotlight {
-    background-color: rgb(228, 120, 58);
-    color: #590202;
+    background-color: rgb(220, 232, 183);
+    color: rgb(25, 60, 23);
     padding: .5em;
     margin: .5em 10% .5em auto;
 }
@@ -227,7 +227,7 @@ h2 {color: #D92929;}
 }
 
 .spotlight img {
-    width: 90%;
+    width: 75%;
     max-width: 400px;
 }
 
@@ -236,7 +236,7 @@ h2 {color: #D92929;}
     font-weight: lighter;
     align-self: end;
     font-size: larger;
-    color: #d9a404;
+    color: rgb(25,60,23);
 }
 
 .weather {
