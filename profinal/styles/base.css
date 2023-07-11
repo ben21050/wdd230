@@ -172,7 +172,7 @@ h2 {color: #D92929;}
     background-color: #f0f0f0; /* Color de fondo del div */
 }
 
-.services{
+.services::after {
     content: "";
     position: absolute;
     bottom: 0;
