@@ -166,10 +166,13 @@ h2 {color: #D92929;}
     padding: .5em;
     margin-bottom: 1.5em;*/
 
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 200px; /* Ajusta la altura según tus necesidades */
-    position: relative;
-    background: linear-gradient(to bottom, #f0f0f0 0%, #ffffff 50%, #f0f0f0 100%);
+    height: 100px; /* Ajusta la altura de las curvas según tus necesidades */
+    background-color: #f0f0f0; /* Color de las curvas */
+    z-index: 1;
 }
 
 .services::before, .services::after {
@@ -183,15 +186,15 @@ h2 {color: #D92929;}
 }
 
 .services::before{
-    border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 0;
     transform: translateY(25px) skewX(-30deg);
     left: 0;
 
 } 
 .services::after{
-    border-radius: 0 0 50% 50%;
+    border-radius: 0 0 0 50%;
     transform: translateY(25px) skewX(30deg);
-    right: 0;  
+    right: 0;
 }
 
 
