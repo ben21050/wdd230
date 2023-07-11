@@ -218,7 +218,7 @@ h2 {color: #D92929;}
     position: relative;
     color: rgb(25, 60, 23);
     padding: .5em;
-    margin: .5em 10% .5em auto;
+    margin: auto;
     background: linear-gradient(to bottom, rgb(220, 232, 183) 0%, rgb(220, 232, 183) 50%, rgb(220, 232, 183) 100%);
 }
 
