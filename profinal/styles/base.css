@@ -231,6 +231,7 @@ h2 {color: #D92929;}
 .spotlight img {
     width: 55%;
     max-width: 400px;
+    border-radius: 50px;
 }
 
 .spotlight h4 {
