@@ -176,34 +176,11 @@ h2 {color: #D92929;}
     content: "";
     position: absolute;
     bottom: 0;
-    width: 35%;
+    width: 90%;
     height: 50px; /* Ajusta la altura de las curvas según tus necesidades */
     background-color: #f0f0f0; /* Color de las curvas */
     z-index: 1;
 }
-
-.services::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 65%;
-    height: 50px; /* Ajusta la altura de las curvas según tus necesidades */
-    background-color: #f0f0f0; /* Color de las curvas */
-    z-index: 1;
-}
-
-.services::before{
-    border-radius: 0 0 50% 50%;
-    transform: translateY(25px) skewX(-30deg);
-    left: 0;
-
-} 
-.services::after{
-    border-radius: 0 0 50% 50%;
-    transform: translateY(25px) skewX(30deg);
-    right: 0;  
-}
-
 
 .services ul {text-align: left;}
 
