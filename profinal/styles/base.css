@@ -221,7 +221,6 @@ h2 {color: #D92929;}
     background: linear-gradient(to bottom, rgb(220, 232, 183) 0%, rgb(220, 232, 183) 50%, rgb(220, 232, 183) 100%);
 
 }
-
 .spotlight::before {
     content: "";
     position: absolute;
