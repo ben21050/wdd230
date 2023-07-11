@@ -169,7 +169,7 @@ h2 {color: #D92929;}
     width: 100%;
     height: 200px; /* Ajusta la altura según tus necesidades */
     position: relative;
-    background-color: #f0f0f0; /* Color de fondo del div */
+    background: linear-gradient(to bottom, #f0f0f0 0%, #ffffff 50%, #f0f0f0 100%);
 }
 
 .services::before, .services::after {
