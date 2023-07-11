@@ -234,6 +234,10 @@ h2 {color: #D92929;}
     border-radius: 50px;
 }
 
+.spotlight h1 {
+    color: rgb(25,60,23);
+}
+
 .spotlight h4 {
     text-transform: uppercase;
     font-weight: lighter;
@@ -255,6 +259,10 @@ h2 {color: #D92929;}
     display: grid;
     max-width: 100%;
     margin: 20 auto;
+}
+
+.weather h1 {
+color: rgb(100, 42, 103);
 }
 
 .weather h3 {
