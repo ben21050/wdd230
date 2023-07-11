@@ -68,6 +68,7 @@
         justify-self: right;
         padding-right: 1.5em;
         padding-left: 1em;
+        border-radius: 50px;
     }
 
     .spotlight h3 {justify-self: center;}
