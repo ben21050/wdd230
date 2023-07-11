@@ -215,6 +215,7 @@ h2 {color: #D92929;}
 }
 
 .spotlight {
+    position: relative;
     color: rgb(25, 60, 23);
     padding: .5em;
     margin: .5em 10% .5em auto;
