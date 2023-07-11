@@ -215,10 +215,31 @@ h2 {color: #D92929;}
 }
 
 .spotlight {
-    background-color: rgb(220, 232, 183);
     color: rgb(25, 60, 23);
     padding: .5em;
     margin: .5em 10% .5em auto;
+    background: linear-gradient(to bottom, rgb(220, 232, 183) 0%, rgb(220, 232, 183) 50%, rgb(220, 232, 183) 100%);
+
+}
+
+.services::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    height: 50px; /* Ajusta la altura de las curvas según tus necesidades */
+    background-color: rgb(220, 232, 183) ; /* Color de las curvas */
+    z-index: 1;
+}
+
+.services::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 65%;
+    height: 50px; /* Ajusta la altura de las curvas según tus necesidades */
+    background-color: rgb(220, 232, 183) ; /* Color de las curvas */
+    z-index: 1;
 }
 
 .spotlight h3 {
@@ -227,7 +248,7 @@ h2 {color: #D92929;}
 }
 
 .spotlight img {
-    width: 75%;
+    width: 55%;
     max-width: 400px;
 }
 
