@@ -127,9 +127,12 @@ h1 {color: #590202;}
 
 h2 {color: #D92929;}
 
-.contador  {color: white;
+.contador  {
+    color: white;
     background: rgb(239, 171, 65);
-    border-radius: 10%;
+    border-radius: 5%;
+    margin: 1% 23% 0 23%;
+    padding: 2%;
 }
 
 .services{
