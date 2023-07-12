@@ -127,37 +127,10 @@ h1 {color: #590202;}
 
 h2 {color: #D92929;}
 
-.hero {
-    justify-self: center;
-    max-width: 800px;
-    display: grid;
-    grid: 1fr 1fr / 1fr 1fr;
-}
-
-.hero:hover {
-    z-index: 2;
-    background: rgb(217,164,4);
-    background: linear-gradient(145deg, greenyellow 24%, orange 49%, rgba(89,2,2,1) 78%);
-    color: white;
-    transition: .5s;
-}
-
-.hero-photo {
-    justify-self: stretch;
-    grid-column: 1/3;
-    grid-row: 1/3;
-    z-index: -1;
-}
 
 .hero-photo img, .hero-photo picture {width: 100%;}
 
-.cta {
-    grid-column: 2/3;
-    grid-row: 2/2;
-    z-index: 1;
-    color: greenyellow;
-    padding: 1em 1em;
-}
+
 
 .services{
     /*margin-left: 30%;
@@ -181,6 +154,16 @@ h2 {color: #D92929;}
     border-radius: 20%;
 }
 
+.services{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px; /* Ajusta este valor para controlar la altura de la curvatura */
+    background-color: white; /* Color de fondo para el borde curvo */
+    border-radius: 50% 50% 0 0; /* Ajusta los valores de border-radius para controlar la curvatura */
+  }
 
 .services ul {text-align: left;}
 
