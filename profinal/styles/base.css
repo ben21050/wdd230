@@ -158,7 +158,8 @@ h2 {color: #D92929;}
 .services ul {text-align: left;}
 
 .services a {color: white;
-    background: rgb(239, 171, 65);
+    background: rgb(218, 53, 85);
+    list-style-type: none;
 }
 
 .services a:hover {
