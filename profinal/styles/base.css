@@ -554,17 +554,11 @@ Suites
 
 
 
-
 .carousel {
     position: relative;
     width: 100%;
     height: 300px;
     overflow: hidden;
-  }
-  
-  .carousel input[type="radio"] {
-    position: absolute;
-    left: -9999px;
   }
   
   .carousel-slides {
@@ -573,6 +567,7 @@ Suites
   }
   
   .slide {
+    position: relative;
     flex-shrink: 0;
     width: 100%;
   }
@@ -584,6 +579,10 @@ Suites
     width: 30px;
     height: 30px;
     background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
     cursor: pointer;
     opacity: 0.5;
     transition: opacity 0.3s ease;
