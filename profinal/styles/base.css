@@ -597,11 +597,11 @@ Suites
   }
   
   .prev {
-    left: 10px;
+    left: 7%;
   }
   
   .next {
-    right: 10px;
+    right: 7%;
   }
   
   #slide1:checked ~ .carousel-slides {
