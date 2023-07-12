@@ -154,16 +154,6 @@ h2 {color: #D92929;}
     border-radius: 20%;
 }
 
-.services{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20px; /* Ajusta este valor para controlar la altura de la curvatura */
-    background-color: white; /* Color de fondo para el borde curvo */
-    border-radius: 50% 50% 0 0; /* Ajusta los valores de border-radius para controlar la curvatura */
-  }
 
 .services ul {text-align: left;}
 
