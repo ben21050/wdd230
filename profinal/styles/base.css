@@ -488,11 +488,6 @@ ul li::marker {
     font-size: x-large;
 }
 
-.services img, .reception-photo img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
 
 /*********
 Reception
