@@ -99,7 +99,7 @@
     
         .amenities {text-align: left;}
     
-        .services {display: grid;}
+        .services {display: flex;}
     
         .services img {
             grid-row: 2/3;
