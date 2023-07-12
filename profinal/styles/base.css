@@ -127,10 +127,10 @@ h1 {color: #590202;}
 
 h2 {color: #D92929;}
 
-
-.hero-photo img, .hero-photo picture {width: 100%;}
-
-
+.contador  {color: white;
+    background: rgb(239, 171, 65);
+    border-radius: 10%;
+}
 
 .services{
     display: flex;
