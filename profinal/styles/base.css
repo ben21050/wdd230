@@ -165,7 +165,8 @@ h2 {color: #D92929;}
     color: black;
     padding: .5em;
     margin-bottom: 1.5em;*/
-
+    align-items: center;
+    position: relative;
     width: 100%;
     height: 200px; /* Ajusta la altura según tus necesidades */
     position: relative;
