@@ -184,14 +184,23 @@ h2 {color: #D92929;}
 }
 
 .spotlight {
+    display: flex;
+    align-items: center;
     position: relative;
     color: rgb(25, 60, 23);
     padding: .5em;
     margin: auto;
     background:rgb(220, 232, 183);
 }
-
+.container{
+    flex: 1;
+}
+.container h1, p{
+    margin: 0;
+}
 .spotlight img {
+    flex: 0 0 auto;
+    margin-right: 20px;
     width: 55%;
     max-width: 400px;
     border-radius: 50%;
@@ -553,10 +562,7 @@ Suites
 }
 
 
-
-
-
-
+/***** Carousel *****/
 
 .carousel {
     position: relative;
