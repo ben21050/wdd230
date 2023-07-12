@@ -101,11 +101,6 @@
     
         .services {display: flex;}
     
-        .services img {
-            grid-row: 2/3;
-            max-height: 500px;
-            align-self: center;
-        }
     
         .services ul {grid-row: 2/3}
     
