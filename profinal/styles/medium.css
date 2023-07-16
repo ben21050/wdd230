@@ -108,7 +108,7 @@
         Events
         ***********/
         .history {
-            display: grid;
+            display: flex;
             justify-content: center;
             grid-row-gap: 10px;
             grid-column-gap: 5px;
