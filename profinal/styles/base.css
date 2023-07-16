@@ -356,6 +356,16 @@ form label.top input:required {border: #D92929 solid 3px;}
 
 .level {font-weight: bold;}
 
+/***** About Us *****/
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(253, 247, 169);
+    color: rgb(100, 42, 103);
+}
+
+
 
 /***** Carousel *****/
 
