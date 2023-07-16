@@ -89,6 +89,7 @@
         .history {
             display: grid;
             grid-template-columns: 1rf 1fr 1fr;
+            grid-column-gap: 10px;
             justify-content: center;
             grid-row-gap: 10px;
             grid-column-gap: 5px;
