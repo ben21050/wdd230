@@ -360,7 +360,7 @@ form label.top input:required {border: #D92929 solid 3px;}
 
 .history {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
     background-color: rgb(253, 247, 169);
     color: rgb(100, 42, 103);
 }
@@ -381,6 +381,10 @@ form label.top input:required {border: #D92929 solid 3px;}
     border-radius: 20%;
     margin: 2%;
     padding: 5%;
+}
+.map iframe{
+    max-width: 200px;
+
 }
 
 
