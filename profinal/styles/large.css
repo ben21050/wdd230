@@ -84,36 +84,33 @@
 
     .services h3 {text-align: left;}
 
-    /*******
-    Footer
-    *******/
+    /******* Footer ******/
 
-    /***********
-	Reservation Page
-	***********/
+    /*********** Reservation Page ***********/
     form {min-width: 400px;}
 
     form fieldset {max-width: 20em;}
 
-    
-    /********
-    Services
-    ********/
-    .subpages {grid-column-gap: 40px;}
 
-    /**********
-    Suites
-    **********/
-    .suite-type {
-        display: grid;
-        grid-column-gap: 15px;
-        padding: 1em;
-        margin: 1em;
+    /******* History ******/
+
+    .history h1 {padding-left: 2em;}
+
+    .logo-center .logo {min-width: 230px;}
+
+
+    .history img {
+        justify-self: right;
+        padding-right: 1.5em;
+        padding-left: 1em;
+        border-radius: 50px;
+        margin-right: 0%;
     }
 
-    .suites-bed img {max-width: 900px;}
+    .services {
+        margin-left: 0;
+        right: 0;
+    }
+    
 
-    .suite-info {grid-row: 1/2;}
-
-    .contact-us {grid-row: 1/2;}
 }
