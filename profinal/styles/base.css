@@ -365,8 +365,8 @@ form label.top input:required {border: #D92929 solid 3px;}
     color: rgb(100, 42, 103);
 }
 
-.about{
-    max-width: 400px;
+.about image{
+    max-width: 200px;
 }
 
 
