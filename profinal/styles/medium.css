@@ -107,7 +107,7 @@
         /***********
         Events
         ***********/
-        .reception-main {
+        .history{
             display: grid;
             justify-content: center;
             grid-row-gap: 10px;
