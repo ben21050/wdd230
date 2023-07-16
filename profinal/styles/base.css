@@ -359,8 +359,6 @@ form label.top input:required {border: #D92929 solid 3px;}
 /***** About Us *****/
 
 .history {
-    display: grid;
-    
     background-color: rgb(218, 53, 85);
     color: rgb(100, 42, 103);
 }
