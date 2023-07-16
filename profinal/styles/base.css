@@ -365,18 +365,22 @@ form label.top input:required {border: #D92929 solid 3px;}
     color: rgb(100, 42, 103);
 }
 
-.about image{
+.about img{
     max-width: 150px;
 }
 
 .about{
-    background: #d9d9d9;
+    background: white;
     border-radius: 20%;
+    margin: 2%;
+    padding: 5%;
 }
 
 .info{
-    background: #d9d9d9;
+    background: white;
     border-radius: 20%;
+    margin: 2%;
+    padding: 5%;
 }
 
 
