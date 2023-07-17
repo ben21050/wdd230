@@ -184,6 +184,7 @@ h2 {color: #D92929;}
 }
 .container{
     flex: 1;
+    padding: 2%;
 }
 .container h1, p{
     margin: 0;
@@ -211,7 +212,7 @@ h2 {color: #D92929;}
 .weather {
     display: grid;
     max-width: 100%;
-    margin: 20% auto;
+    margin: auto;
 }
 
 .weather h1 {
