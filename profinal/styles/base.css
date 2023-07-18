@@ -382,6 +382,7 @@ form label.top input:required {border: #D92929 solid 3px;}
 }
 .map iframe{
     max-width: 200px;
+    border-radius: 20%;
 
 }
 
@@ -410,7 +411,9 @@ form label.top input:required {border: #D92929 solid 3px;}
     flex-shrink: 0;
     width: 100%;
   }
-  
+  .slide:hover img {
+    transform: scale(1.1); 
+  }
   .carousel-control {
     position: absolute;
     top: 50%;
